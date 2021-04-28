@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+    // TODO: move this into a more appropriate view
+}
+
+<div class="text-center" id="vue-url-loader-app">
+    <h1 class="display-4">UrlLoader</h1>
+    <p>Enter a fully qualified URL below to scrape images and word counts.</p>
+    <div id="load-url-form">
+        <input class="js-url-input" type="text" placeholder="https://placeholder.com/" />
+        <button v-on:click="loadUrl">Fetch Url Contents</button>
+        <div class="status"></div>
+    </div>
+    <div class="load-url-result">
+        <div class="word-graph">
+            <h2>{{wordCountTitle}}</h2>
+            <canvas id="word-graph-chart" width="400" height="400"></canvas>
+        </div>
+        <div class="image-gallery-container">
+            <h2>Image Gallery</h2>
+            <div class="image-gallery"></div>
+        </div>
+    </div>
+</div>
