@@ -1,5 +1,3 @@
-using System;
-
 namespace UrlLoader.Models
 {
     public class ErrorViewModel

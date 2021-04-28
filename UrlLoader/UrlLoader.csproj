@@ -9,10 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="README.MD" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.33" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
